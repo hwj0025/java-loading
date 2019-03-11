@@ -1,0 +1,31 @@
+package com.yychatclient.view;
+
+import javax.swing.*;
+
+public class ClientLogin extends JFrame{
+	
+	JLabel jlbl1;
+	
+	
+	JButton jb1,jb2,jb3;
+	public ClientLogin(){
+	jlbl1=new JLabel(new ImageIcon("images/tou.gif"));
+	
+	this.add(jlbl1,"North");
+	this.setSize(350,240);
+	
+	
+	jb1=new JButton(new ImageIcon("denglu.gif"));
+	jb2=new JButton(new ImageIcon("zhuce.gif"));
+	jb3=new JButton(new ImageIcon("quxiao.gif"));
+	this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	this.setVisible(true);
+	}
+	
+	
+	public static void main(String[] args) {
+		ClientLogin clientLogin=new ClientLogin();
+
+	}
+
+}
